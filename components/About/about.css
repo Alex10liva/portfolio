@@ -1,0 +1,131 @@
+.about {
+  min-height: 100vh;
+}
+
+.about .content-wrapper {
+  max-width: var(--max-width);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
+.about h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.about .right h2 {
+  font-weight: 500;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.about a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #efefef;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.about span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #efefefd2;
+}
+
+.about p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.right {
+  min-height: 100vh;
+  border-left: 1px solid rgba(255, 255, 255, 0.147);
+  background-color: var(--background-darkmode);
+  z-index: 1;
+  padding: 200px 0 200px 60px;
+}
+
+.left::before {
+  content: "";
+  top: 20%;
+  left: calc(100% + 80px);
+  width: 100px;
+  height: 80%;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.282);
+  filter: blur(100px);
+  position: absolute;
+  z-index: 1;
+}
+
+.job-card {
+  margin-bottom: 50px;
+  border-radius: 15px;
+  padding: 30px;
+  background: rgba(149, 149, 149, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(26, 26, 26, 0.37);
+  /* backdrop-filter: blur(10px); */
+  border: 1px solid rgba(255, 255, 255, 0.147);
+  position: relative;
+  z-index: 1;
+}
+
+.job-card p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .about .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .right {
+    border: none;
+  }
+
+  .left {
+    position: initial;
+  }
+  .left::before {
+    display: none;
+  }
+
+  .right,
+  .left {
+    padding: var(--padding-mobile);
+  }
+
+  .about h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .about p,
+  .about span,
+  .about a {
+    font-size: 16px;
+  }
+}
