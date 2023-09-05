@@ -1,4 +1,4 @@
-import JobCard from "../JobCard";
+import JobCard from "../../components/JobCard";
 import "./about.css";
 
 const jobs = [
