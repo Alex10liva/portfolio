@@ -1,0 +1,141 @@
+.projects .content-wrapper {
+  max-width: var(--max-width);
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: var(--background-darkmode);
+  z-index: 2;
+  position: relative;
+  padding-top: 200px;
+}
+
+.projects h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.project-card {
+  background: rgba(149, 149, 149, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(26, 26, 26, 0.37);
+  /* border: 1px solid rgba(255, 255, 255, 0.147); */
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.project-card p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.project-card p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.project-card img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-card .content {
+  padding: 20px;
+}
+
+.project-card span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+/* .project-card span {
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  width: 28px;
+  flex-direction: row;
+  transition: transform 0.3s;
+  overflow: hidden;
+} */
+
+.project-card span:hover {
+  cursor: default;
+  transform: scale(1.1);
+}
+
+.tech {
+  display: flex;
+}
+
+.project-card span:not(:last-child) {
+  margin-right: 10px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .project-footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  border-top: 2px solid #ffffff25;
+}
+
+.project-card .project-footer a {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 30px 20px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #efefef;
+  transition: background 0.3s, color 0.3s;
+}
+
+.project-card .project-footer a:hover {
+  background: #efefef;
+  color: #151515;
+}
+
+.project-card .project-footer path {
+  transition: fill 0.3s;
+}
+
+.project-card .project-footer a:hover path {
+  fill: #151515;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .projects .content-wrapper {
+    padding: var(--padding-mobile);
+  }
+
+  .projects-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card span {
+    font-size: 12px;
+  }
+}

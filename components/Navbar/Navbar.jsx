@@ -13,10 +13,10 @@ const links = [
     label: "Sobre mí",
     route: "sobre-mi",
   },
-  {
-    label: "Tecnologías",
-    route: "tecnologias",
-  },
+  // {
+  //   label: "Tecnologías",
+  //   route: "tecnologias",
+  // },
   {
     label: "Proyectos",
     route: "proyectos",
