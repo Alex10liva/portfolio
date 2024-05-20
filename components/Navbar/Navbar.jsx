@@ -6,20 +6,20 @@ import { Link } from "react-scroll";
 
 const links = [
   {
-    label: "Inicio",
-    route: "inicio",
+    label: "Home",
+    route: "home",
   },
   {
-    label: "Sobre mí",
-    route: "sobre-mi",
+    label: "About me",
+    route: "about-me",
   },
   // {
   //   label: "Tecnologías",
   //   route: "tecnologias",
   // },
   {
-    label: "Proyectos",
-    route: "proyectos",
+    label: "Projects",
+    route: "projects",
   },
 ];
 
@@ -31,7 +31,7 @@ function Navbar() {
       const section = document.getElementById(link.route);
       return {
         id: link.route,
-        offsetTop: section.offsetTop,
+        offsetTop: section.offsetTop - 50,
         offsetBottom: section.offsetTop + section.clientHeight,
       };
     });

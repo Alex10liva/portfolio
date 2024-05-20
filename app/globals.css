@@ -27,8 +27,10 @@
     #00000010,
     #00000080
   );
-  --background-darkmode: #1a1a1a;
-  --foreground-rgb: 255, 255, 255;
+  /* --background-darkmode: #1a1a1a; */
+  --background-darkmode: #121212;
+  /* --foreground-rgb: 255, 255, 255;*/
+  --foreground-rgb: 240, 240, 240;
 }
 
 * {

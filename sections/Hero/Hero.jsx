@@ -4,19 +4,19 @@ import "./hero.css";
 
 function Hero() {
   return (
-    <section className="hero" id="inicio">
+    <section className="hero" id="home">
       <div className="bubbles"></div>
       <main>
         <div className="content-wrapper">
           <div className="hero-text">
-            <h1>Hola, soy Alejandro Oliva</h1>
-            <h2>Ingeniero en Sistemas Computacionales</h2>
+            <h1>Hello, I&apos;m Alejandro Oliva</h1>
+            <h2>Computer Systems Engineer</h2>
 
             <p>
-              Me apasiona la creación de aplicaciones web que no solo
-              sobresalgan en su funcionamiento, sino que también inspiren a
-              través de diseños atractivos. Bienvenidos a mi mundo, donde me
-              gusta fusionar la tecnología y la creatividad.
+              I am passionate about creating apps that not only stand out in
+              performance, but also inspire through attractive designs. Welcome
+              to my world, where I like to merge technology and creativity.
+              Explore my portfolio and discover my featured projects.
             </p>
           </div>
           <div className="avatar-wrapper">

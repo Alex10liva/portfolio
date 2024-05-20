@@ -4,7 +4,7 @@ import { projects } from "@/utils";
 
 function Project() {
   return (
-    <section className="projects" id="proyectos">
+    <section className="projects" id="projects">
       <div className="content-wrapper">
         <h2>Projects</h2>
         <div className="projects-wrapper">
@@ -13,6 +13,7 @@ function Project() {
               key={project.title}
               title={project.title}
               description={project.description}
+              note={project.note}
               image={project.image}
               tech={project.tech}
               github={project.github}

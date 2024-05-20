@@ -5,12 +5,13 @@
   background-color: var(--background-darkmode);
   z-index: 2;
   position: relative;
-  padding-top: 200px;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
 .projects h2 {
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -43,6 +44,12 @@
 
 .project-card p:not(:last-child) {
   margin-bottom: 20px;
+}
+.project-card .note {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ffffffae;
 }
 
 .project-card img {
@@ -129,6 +136,7 @@
 @media only screen and (max-width: 767.98px) {
   .projects .content-wrapper {
     padding: var(--padding-mobile);
+    padding-bottom: 50px;
   }
 
   .projects-wrapper {

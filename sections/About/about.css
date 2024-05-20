@@ -22,12 +22,22 @@
 
 .about h2 {
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
 .about .right h2 {
   font-weight: 500;
+}
+
+.about .left p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding-right: 50px;
+}
+
+.about .left p:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .subtitle {
@@ -38,18 +48,20 @@
 }
 
 .about a {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #efefef;
   padding: 5px 10px;
   border-radius: 5px;
   text-decoration: underline;
+  margin-right: 15px;
 }
 
 .about span {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #efefefd2;
+  text-align: end;
 }
 
 .about p {
@@ -122,10 +134,16 @@
     font-weight: 400;
     margin-bottom: 20px;
   }
+  .about span {
+    font-size: 14px;
+  }
 
   .about p,
-  .about span,
   .about a {
     font-size: 16px;
+  }
+
+  .about .left p {
+    padding-right: 0;
   }
 }
