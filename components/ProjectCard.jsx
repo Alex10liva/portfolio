@@ -30,6 +30,7 @@ function ProjectCard(props) {
 
         <h2>{props.title}</h2>
         <p>{props.description}</p>
+        <p className="note">{props.note}</p>
       </div>
       {props.github || props.url ? (
         <footer className="project-footer">

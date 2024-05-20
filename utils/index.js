@@ -1,7 +1,24 @@
+import serenade from "@/public/images/serenade.png";
+import booked from "@/public/images/booked.png";
+import pinterest from "@/public/images/pinterest.png";
 import blogImg from "@/public/images/blog-img.png";
+import imind from "@/public/images/imind.png";
+import saberesjugar from "@/public/images/saberesjugar.png";
 import portfolioImg from "@/public/images/portfolio-img.png";
 
 const jobs = [
+  {
+    title: "Mobile developer",
+    company: "Apple Developer Academy",
+    color: "#e8437a",
+    companyUrl: "https://www.developeracademy.unina.it/en/",
+    date: "October 2023 - Present",
+    description: [
+      "Participant in Apple's application development program, focused on learning and applying the latest iOS application development technologies and practices.",
+      "Collaboration on mobile application development projects using SwiftUI.",
+      "Experience building iOS apps focused on user experience and accessibility.",
+    ],
+  },
   {
     title: "Web developer Internship",
     company: "Pixolab",
@@ -32,39 +49,102 @@ const jobs = [
 
 const projects = [
   {
-    title: "My portfolio",
+    title: "Serenade",
     description: [
-      "In this project I share information about myself, my work experience and outstanding projects in which I have worked.",
+      "A team-developed music social network app that allows users to share their favorite songs and dedicate them to friends. Users can make friends, listen to previews, and open songs with their preferred streaming platform.",
     ],
-    image: portfolioImg,
-    tech: ["Next.js", "CSS"],
-    github: "https://github.com/Alex10liva/portfolio",
+    note: "Note: I will add the TestFlight link as soon as it is available. Also, the official release on the App Store is coming soon!",
+    image: serenade,
+    tech: ["SwiftUI", "MusicKit", "Firebase"],
+  },
+  {
+    title: "Booked",
+    description: [
+      "An app focused on data structures and algorithms for book recommendations and tracking. Using the Google Books API, users can keep track of their finished books and reading list to receive book recommendations based on their preferences.",
+    ],
+    note: "",
+    image: booked,
+    tech: ["SwiftUI", "Swift Data", "Algorithms"],
+    github: "https://github.com/Alex10liva/Booked",
+  },
+  {
+    title: "Pinterest Clone",
+    description: [
+      "This project is a clone of the Pinterest iOS Application, where users can create boards and pin images. It uses Swift Data for managing and persisting user data.",
+    ],
+    note: "",
+    image: pinterest,
+    tech: ["SwiftUI", "Swift Data"],
+    github: "https://github.com/Alex10liva/Pinterest-clone",
   },
   {
     title: "Blog.",
     description:
       "This project is my blog, focused on tech news, tutorials, and other topics. The blog is active and I'm still working to add content regularly.",
+    note: "Note: The webpage may take a while to load.",
     image: blogImg,
     tech: ["JavaScript", "EJS", "CSS", "Markdown"],
     github: "https://github.com/Alex10liva/blog",
     url: "https://blog-02pp.onrender.com/",
+  },
+  {
+    title: "iMind",
+    description:
+      "This app was created to explore Apple's Human Interface Guidelines and includes features for meditation, breathing exercises, and daily mood check-ins to monitor your emotional well-being",
+    note: "",
+    image: imind,
+    tech: ["SwiftUI", "Swift Data"],
+    github: "https://github.com/xDiegoNunezx/MC1-ADA",
+  },
+  /*{
+    title: "SaberEsJugar",
+    description:
+      "A school project where elementary students take quizzes on various subjects, earn stars based on performance, which they can then use to download drawings, and watch educational YouTube videos.",
+    note: "Note: The 'dev' branch contains all the latest changes.",
+    image: saberesjugar,
+    tech: ["UIKit"],
+    github: "https://github.com/Alex10liva/SaberEsJugar",
+  },*/
+  {
+    title: "My portfolio",
+    description: [
+      "In this project I share information about myself, my work experience and outstanding projects in which I have worked.",
+    ],
+    note: "",
+    image: portfolioImg,
+    tech: ["Next.js", "React", "CSS"],
+    github: "https://github.com/Alex10liva/portfolio",
   },
 ];
 
 const brandsBG = {
   JavaScript: "#f0db4f",
   "Next.js": "#000000",
+  React: "#61dafb",
   CSS: "#2965f1",
   EJS: "#b4ca65",
   Markdown: "#ffffff",
+  UIKit: "#007acc",
+  SwiftUI: "#0071e3",
+  "Swift Data": "#7e99a7",
+  MusicKit: "#ff2f55",
+  Firebase: "#ffca28",
+  Algorithms: "#FF8C00",
 };
 
 const brandsColor = {
   JavaScript: "#312d10",
   "Next.js": "#efefef",
+  React: "#20232a",
   CSS: "#efefef",
   EJS: "#a91e50",
   Markdown: "#151515",
+  UIKit: "#ffffff",
+  SwiftUI: "#ffffff",
+  "Swift Data": "#151d23",
+  MusicKit: "#ffffff",
+  Firebase: "#000000",
+  Algorithms: "#ffffff",
 };
 
 const brands = {
