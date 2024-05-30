@@ -1,9 +1,9 @@
 import serenade from "@/public/images/serenade.png";
+import serenadeLanding from "@/public/images/serenade-landing.png";
 import booked from "@/public/images/booked.png";
 import pinterest from "@/public/images/pinterest.png";
 import blogImg from "@/public/images/blog-img.png";
 import imind from "@/public/images/imind.png";
-import saberesjugar from "@/public/images/saberesjugar.png";
 import portfolioImg from "@/public/images/portfolio-img.png";
 
 const jobs = [
@@ -56,6 +56,16 @@ const projects = [
     note: "Note: I will add the TestFlight link as soon as it is available. Also, the official release on the App Store is coming soon!",
     image: serenade,
     tech: ["SwiftUI", "MusicKit", "Firebase"],
+  },
+  {
+    title: "Serenade Landing Page",
+    description: [
+      "Design and development of the landing page for the Serenade application, highlighting its different functions through images and offering a direct link to download the app. Implemented Markdown for terms and conditions, privacy policy, etc. Converting them to HTML for optimal presentation.",
+    ],
+    image: serenadeLanding,
+    tech: ["Next.js", "React", "CSS", "Markdown"],
+    github: "https://github.com/Alex10liva/serenade-landing",
+    url: "https://serenade-landing.vercel.app/",
   },
   {
     title: "Booked",
