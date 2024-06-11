@@ -53,9 +53,10 @@ const projects = [
     description: [
       "A team-developed music social network app that allows users to share their favorite songs and dedicate them to friends. Users can make friends, listen to previews, and open songs with their preferred streaming platform.",
     ],
-    note: "Note: I will add the TestFlight link as soon as it is available. Also, the official release on the App Store is coming soon!",
     image: serenade,
     tech: ["SwiftUI", "MusicKit", "Firebase"],
+    download:
+      "https://apps.apple.com/mx/app/serenade-music-with-friends/id6478116021?l=en-GB",
   },
   {
     title: "Serenade Landing Page",

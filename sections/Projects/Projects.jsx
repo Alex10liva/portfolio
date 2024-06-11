@@ -18,6 +18,7 @@ function Project() {
               tech={project.tech}
               github={project.github}
               url={project.url}
+              download={project.download}
             />
           ))}
         </div>
